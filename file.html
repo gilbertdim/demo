@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>file</title>
+    <title>fix file</title>
 </head>
 <body>
-    
+    <table class="table table-border table-hover">
+        <thead>
+            <th>Column </th>
+            <th>Column </th>
+            <th>Column </th>
+            <th>Column </th>
+            <th>Column </th>
+        </thead>
+        <tbody>
+            @foreach($records as $variable)
+            <tr>
+                <td>{{ $variable->calid }}</td>
+                <td>{{ $variable->desc }}</td>
+                <td>{{ $variable->moel }}</td>
+                <td>{{ $variable->serial }}</td>
+                <td>{{ $variable->asset }}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
 </body>
 </html>
